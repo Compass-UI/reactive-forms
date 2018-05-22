@@ -5,19 +5,30 @@
 <form (ngSubmit)="save()" 
     [formGroup]="customerForm" 
     novalidate>
+
   <fieldset>
+      <div class="form-group row">
+    
       <label for="firstName">First Name</label>
       <input id="firstName" type="text" autocomplete="first-name"
         formControlName="firstName"
       />
+      </div>
+    <div class="form-group row">
+      
       <label for="lastName">Last Name</label>
       <input id="lastName" type="text" autocomplete="family-name"
         formControlName="lastName"
       />
+    </div>
+    <div class="form-group row">
+    
       <label for="email">First Name</label>
       <input id="email" type="text" autocomplete="email"
         formControlName="email"
       />
+    </div>
+        
   </fieldset>
 
   <button class="btn btn-primary" [disabled]="!customerForm.valid">
@@ -25,6 +36,8 @@
   </button>
 </form>
 <br>
-<div>Dirty: {{customerForm.dirty}}</div>
-<div>Dirty: {{customerForm.touched}}</div>
-<div>Dirty: {{customerForm.value | json}}</div>
+<pre>
+    <br>Dirty: {{customerForm.dirty}}
+    <br>Dirty: {{customerForm.touched}}
+    <br>Dirty: {{customerForm.value | json}}
+</pre>
