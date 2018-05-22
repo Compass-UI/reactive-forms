@@ -32,6 +32,13 @@ export class AppComponent implements OnInit {
         sendCatalog: 'Yes'
     });
   }
+
+  patchValue(){
+    this.customerForm.patchValue(
+      {
+        firstName: 'David',
+    });
+  }
 }
 class Customer {
   constructor() {}
