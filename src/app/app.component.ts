@@ -23,6 +23,15 @@ export class AppComponent implements OnInit {
     console.log(this.customerForm);
     console.log(`Saved: ${JSON.stringify(this.customerForm.value)}`);
   }
+  populate(){
+    this.customerForm.setValue(
+      {
+        firstName: 'David',
+        lastName: 'Shams',
+        email: 'me@gmail.com',
+        sendCatalog: 'Yes'
+    });
+  }
 }
 class Customer {
   constructor() {}
