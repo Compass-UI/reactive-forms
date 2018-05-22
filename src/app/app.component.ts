@@ -15,11 +15,15 @@ export class AppComponent implements OnInit {
       firstName: new FormControl(),
       lastName: new FormControl(),
       email: new FormControl(),
-      sendCatalog: new FormControl(true)
+      sendCatalog: new FormControl(true) /** Default value for FormControl */
 
     });
   }
+  save() {
+    console.log(this.customerForm);
+    console.log(`Saved: ${JSON.stringify(this.customerForm.value)}`);
+  }
 }
-class Customer{
-  constructor(){}
+class Customer {
+  constructor() {}
 }
