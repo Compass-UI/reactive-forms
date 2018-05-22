@@ -6,11 +6,13 @@ import {enableProdMode} from '@angular/core'; /** Enable production mode */
 
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchTripsComponent } from './search-trips/search-trips.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchTripsComponent
   ],
   imports: [
     BrowserModule,

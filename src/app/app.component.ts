@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     console.log(this.customerForm);
     console.log(`Saved: ${JSON.stringify(this.customerForm.value)}`);
   }
-  populate(){
+  populate() {
     this.customerForm.setValue(
       {
         firstName: 'David',
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  patchValue(){
+  patchValue() {
     this.customerForm.patchValue(
       {
         firstName: 'David',
