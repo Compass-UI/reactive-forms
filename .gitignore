@@ -42,3 +42,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+**/*/bootstrap-3.3.7-dist/
